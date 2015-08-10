@@ -50,3 +50,14 @@ You can change transition by changing the reveal transition property in Reveal.i
   				transition:  'default', // default/cube/page/concave/zoom/linear/none
   			});
 ```
+
+## Editing or Viewing Slides Locally
+
+Reveal is set up as a submodule in this repository. In order to edit or view the slides locally, run:
+
+```bash
+	git submodule init
+	git submodule update
+```
+
+in the gdi-core-html-css directory to clone Reveal.js. [See git-scm.com for more information on Git submodules](http://git-scm.com/book/en/v1/Git-Tools-Submodules#Cloning-a-Project-with-Submodules).
