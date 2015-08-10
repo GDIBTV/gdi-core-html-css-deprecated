@@ -13,3 +13,20 @@
 	margin-top:40%;
 	clear: both;
 }
+
+.reveal .large { font-size: larger !important;}
+
+.reveal small { vertical-align: middle; }
+
+.reveal .columns {
+	margin-right: -10px;
+	margin-left: -10px;
+	overflow: hidden;
+	clear: both;
+}
+.reveal .half {
+	box-sizing: border-box;
+	width: 50%;
+	padding-left: 10px;
+	padding-right: 10px;
+}

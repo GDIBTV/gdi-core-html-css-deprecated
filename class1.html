@@ -369,7 +369,7 @@
         
         <!-- Develop it -->
         <section class="hide-pdf">
-          <h3>Let's develop it!</h3>
+          <h3>Develop it!</h3>
           <p>Let's get our web page set up with a doctype, head, title and body.</p>
           <p>Later we'll add some content to it!</p>
         </section>       
@@ -405,8 +405,8 @@
         <!-- Paragraphs-->
         <section>
           <h3>Element: Paragraph</h3>
-          <div>
-          <div class="left" style="width:50%">
+          <div class="columns">
+          <div class="left half">
 <pre><code>
   &lt;p>Paragraph 1&lt;/p>
   &lt;p>Paragraph 2&lt;/p>
@@ -444,8 +444,8 @@
         <!-- Headings-->
         <section>
           <h3>Element: Heading</h3>
-          <div>
-          <div class="left" style="width:50%">
+          <div class="columns">
+          <div class="left half">
 <pre><code>
   &lt;h1>Heading 1&lt;/h1>
   &lt;h2>Heading 2&lt;/h2>
@@ -455,7 +455,7 @@
   &lt;h6>Heading 6&lt;/h6>
 </code></pre>
           </div>
-          <div class="left" style="width:50%">
+          <div class="left half">
             <h1 style="font-size: 120%">Heading 1</h1>
             <h2 style="font-size: 110%">Heading 2</h2>
             <h3 style="font-size: 105%">Heading 3</h3>
@@ -476,15 +476,15 @@
         <!-- Em and Strong-->
         <section>
           <h3>Formatted text</h3>
-          <div>
-          <div class="left" style="width:50%">
+          <div class="columns">
+          <div class="left half">
 <pre><code>
 &lt;p>
   Here is a paragraph with &lt;em>Emphasized&lt;/em> text and &lt;strong>Important&lt;/strong> text.
 &lt;/p>
 </code></pre>
           </div>
-          <div class="left left-align" style="width:50%">
+          <div class="left left-align half">
             <p>
               Here is a paragraph with <em>Emphasized</em> text and <strong>Important</strong> text.
             </p>
@@ -497,7 +497,7 @@
         </section> 
 <!--develop it!-->
     <section  class="hide-pdf">
-      <h3>Let's Develop it!</h3>
+      <h3>Develop it!</h3>
       <p class="left-align">Let's add some content to our site!</p>
       <p class="left-align">Add one of each level of heading with 1-2 short paragraphs of text below each heading. </p>
       <p class="left-align">Create some <em>emphasized</em> and <strong>strong</strong> text within a few paragraphs.</p>
@@ -507,17 +507,17 @@
     <!-- Links-->
         <section>
           <h3>Element: Link</h3>
-          <p>Links have three components</p>
+          <p class="yellow large"><code>&lt;a>&lt;/a></code></p>
+          <p>Links need two attributes</p>
           <ul>
-            <li>Tag: &lt;a>&lt;/a></li>
-            <li>Href attribute: "http://www.girldevelopit.com"</li>
-            <li>Title attribute: "Girl Develop It"</li>
+            <li><span class="green">Href:</span> <code>http://www.girldevelopit.com</code></li>
+            <li><span class="green">Title:</span> <code>The Girl Develop It Homepage</code></li>
           </ul>
-<pre><code>
-&lt;a href="http://www.girldevelopit.com" title="Girl Develop It Homepage">GDI&lt;/a>
+<pre><code>&lt;a href="http://www.girldevelopit.com" title="The Girl Develop It 
+  Homepage">Girl Develop It&lt;/a>
 </code></pre>
-        <p><a href="http://www.girldevelopit.com" title="Girl Develop It Homepage">GDI</a></p>
-        <p>The &lt;a&gt; tag surrounds text or images to turn them into links</p>
+        <p><a href="http://www.girldevelopit.com" title="The Girl Develop It Homepage">Girl Develop It</a></p>
+        <p>The <code class="yellow">&lt;a&gt;</code> tag surrounds text or images to turn them into links</p>
         </section>
         
         <!-- Link Attributes -->
@@ -537,57 +537,65 @@
         </section>
         <!-- relative & absolute links -->
         <section>
-          <h3>Relative vs. Absolute paths for links & images</h3>
+          <h3>Relative vs. Absolute Paths</h3>
+
+          <p><strong class="yellow">Relative</strong></p>
+          <p>Relative paths change depending upon the page the link is on.</p>
           <ul>
-            <li>
-            <strong class="blue">Relative</strong>
-              <ul>
-                <li>Relative paths change depending upon the page the link is on.
-                  <ul>
-                    <li><small>Links within the same directory need no path information. <code class="blue">"filename.jpg"</code></small></li>
-                    <li><small>Subdirectories are listed without preceding slashes. <code class="blue">"images/filename.jpg"</code></small></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <strong class="blue">Absolute</strong>
-            <ul>
-              <li>Absolute paths refer to a specific location of a file, including the domain. <small><code class="blue">"http://www.girldevelopit.com/chapters/detroit"</code></small></li>
-              </li>
-              <li>Typically used when pointing to a link that is not within your own domain.</li>
-            </ul>
-            </li> 
+            <li><small>Links within the same directory need no path information. <code class="blue">"filename.jpg"</code></small></li>
+            <li><small>Subdirectories are listed without preceding slashes. <code class="blue">"images/filename.jpg"</code></small></li>
+            <li><small>"Root-relative" paths start with a slash. <code class="blue">"/materials/class1.zip"</code></small></li>
           </ul>
+
+          <p><strong class="yellow">Absolute</strong></p>
+          <p>Absolute paths refer to a specific location of a file, including the domain.</p>
+          <ul>
+            <li><small>Ex: <code class="blue">"http://www.girldevelopit.com/materials/html-intro"</code></small></li>
+            </li>
+            <li><small>Most commonly used when pointing to a link on another website (i.e. "external" links).</small></li>
+          </ul>
+
+
         </section>
         <!-- Lets develop it-->
         <section class="hide-pdf">
-          <h3>Let's Develop It</h3>
-          <p>Let's add links to our site!</p>
-          <p>Add links that open in the same window, a new window and link to an e-mail address.</p>
+          <h3>Develop It!</h3>
+          <p>Let's add links to our site</p>
+          <ul>
+            <li>Add a link that opens in the same window</li>
+            <li>Add a link to an external site that opens in a new window</li>
+            <li>Add a link to an e-mail address</li>
+          </ul>
         </section>
         
         <!-- Images-->
         <section>
           <h3>Element: Image</h3>
-          <p>Images have three components</p>
-          <ul>
-            <li>Tag: &lt;img/></li>
-            <li>Src attribute: "http://girldevelopit.com/assets/pink-logo.png"</li>
-            <li>Alt attribute: "Girl Develop It logo"</li>
-          </ul>
-<pre><code>
-&lt;img src="http://girldevelopit.com/assets/pink-logo.png" alt="Girl Develop It Logo"/>
-</code></pre>
-<img src="http://girldevelopit.com/assets/pink-logo.png" alt="Girl Develop It Logo"/>
+          <p class="yellow large"><code>&lt;img/></code></p>
+          <div class="left-align">
+            <p>Images need two attributes</p>
+            <ul>
+              <li><span class="green">Source (src):</span> <code>http://www.girldevelopit.com/assets/flourish-<br>med-587a82b8b186d39045f1fadfe47784f8.png</code></li>
+              <li><span class="green">Alt text (alt):</span> <br><code>Girl Develop It flourish</code></li>
+            </ul>
+          </div>
+          <div class="columns">
+            <div class="left half">
+              <pre><code>&lt;img src="http://www.girldevelopit.com/assets/flourish-med-587a82b8b186d39045f1fadfe47784f8.png" alt="Girl Develop It flourish"/></code></pre>
+            </div>
+            <div class="left half">
+              <img src="http://www.girldevelopit.com/assets/flourish-med-587a82b8b186d39045f1fadfe47784f8.png" alt="Girl Develop It flourish"/>
+            </div>
+          </div>
           <p><small>* Notice: This tag is our first example of a stand-alone or "self-closing" element.</small></p>
 
         </section>
         <!-- Line Break-->
         <section>
           <h3>Element: Line Break</h3>
-          <div>
-          <div class="left" style="width:50%">
+          <p class="yellow large"><code>&lt;br/></code></p>
+          <div class="columns">
+          <div class="left half">
 <pre><code>
 &lt;p>
   Imagine there's no Heaven &lt;br/>
@@ -597,7 +605,7 @@
 &lt;/p>
 </code></pre>
           </div>
-          <div class="left left-align" style="width:50%">
+          <div class="left left-align half">
             <p>
             Imagine there's no Heaven <br/>
             It's easy if you try <br/>
@@ -613,15 +621,15 @@
         
         <!-- Develop it! -->
         <section>
-          <h3>Let's Develop It!</h3>
+          <h3>Develop It!</h3>
           <p>Let's add some images and line breaks to our page.</p>
           <p>We can even turn our images into links!</p>
         </section>
         <!-- Lists-->
         <section>
           <h3>Element: Unordered and ordered lists</h3>
-          <div>
-          <div class="left" style="width:50%">
+          <div class="columns">
+          <div class="left half">
 <pre><code>
   &lt;ul>
     &lt;li>List Item&lt;/li>
@@ -635,7 +643,7 @@
   &lt;/ol>
 </code></pre>
           </div>
-          <div class="left" style="width:50%">
+          <div class="left half">
             <p>Unordered list (bullets)
             <ul>
               <li>List Item</li>
@@ -663,7 +671,7 @@
         
         <!-- Develop it!-->
         <section class="hide-pdf">
-          <h3>Let's Develop it!</h3>
+          <h3>Develop it!</h3>
           <p>Let's add one of each ordered and unordered lists to our page.</p>
           <p>We can make a list of links or even a list of images!</p>
         </section>
@@ -694,8 +702,8 @@
           <p>Tables are a way to represent complex information in a grid format.</p>
           <p>Tables are made up of rows and columns.</p>
           
-          <div>
-          <div class="left" style="width:50%">
+          <div class="columns">
+          <div class="left half">
 <pre><code>
 &lt;table>
   &lt;tr> 
@@ -709,7 +717,7 @@
 &lt;/table>
 </code></pre>
           </div>
-          <div class="left left-align" style="width:50%">
+          <div class="left left-align half">
             <table style="border: 1px solid">
               <tr> 
                 <th style="border: 1px solid">Head</th>
@@ -737,7 +745,7 @@
         <section>
           <h3>Character codes</h3>
           <p>There are character codes for many different characters in many different languages</p>
-          <div class="left" style="width:50%">
+          <div class="left half">
           <ul>
             <li>Delta: &amp;delta; &delta;</li>
             <li>Copyright symbol: &amp;copy; &copy;</li>
