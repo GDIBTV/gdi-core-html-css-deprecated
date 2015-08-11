@@ -6,11 +6,13 @@
 	border: none;
 	box-shadow: none;
 }
+.reveal img {
+	max-height: 75vh;
+}
 
 .reveal .question-mark {
 	font-size:1200%; 
 	height:100%; 
-	margin-top:40%;
 	clear: both;
 }
 
@@ -26,7 +28,37 @@
 }
 .reveal .half {
 	box-sizing: border-box;
+	float: left;
 	width: 50%;
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+.reveal pre code {
+	word-wrap: break-word;
+}
+
+.reveal .splash h1,
+.reveal .splash h2,
+.reveal .splash h3,
+.reveal .splash h4,
+.reveal .splash p {
+	color: #fff;
+}
+
+.reveal dd { margin-bottom: .5em; }
+.reveal ul + p { margin-top: .5em; }
+.reveal strong { font-family: "Gotham-Bold", "Gotham-Book", "Helvetica", Arial, sans-serif; }
+
+/*=== Class 1 */
+
+.reveal .character-table {
+	font-size: smaller;
+	width: 100%;
+}
+
+.reveal .character-table td,
+.reveal .character-table th {
+	padding: 3px 10px;
+	text-align: center;
 }
