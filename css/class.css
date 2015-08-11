@@ -42,10 +42,18 @@
 .reveal .develop-it > * {
 	color: #fff;
 }
+@media print {
+	.reveal .splash > *,
+	.reveal .develop-it > * {
+		color: #000;
+	}
+}
 
 .reveal dd { margin-bottom: .5em; }
 .reveal ul + p { margin-top: .5em; }
 .reveal strong { font-family: "Gotham-Bold", "Gotham-Book", "Helvetica", Arial, sans-serif; }
+
+.reveal .slides section .fragment.visible.muted { opacity: .35;}
 
 /*=== Class 1 */
 
