@@ -38,11 +38,8 @@
 	word-wrap: break-word;
 }
 
-.reveal .splash h1,
-.reveal .splash h2,
-.reveal .splash h3,
-.reveal .splash h4,
-.reveal .splash p {
+.reveal .splash > *,
+.reveal .develop-it > * {
 	color: #fff;
 }
 

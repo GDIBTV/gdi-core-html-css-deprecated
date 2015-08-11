@@ -366,7 +366,7 @@
         </section>
         
         <!-- Develop it -->
-        <section class="hide-pdf">
+        <section class="hide-pdf develop-it">
           <h3>Develop it!</h3>
           <p>Let's get our web page set up with a doctype, head, title, and body.</p>
           <p>Later we'll add some content to it!</p>
@@ -498,7 +498,7 @@
         </section> 
 
         <!--develop it!-->
-        <section  class="hide-pdf">
+        <section  class="hide-pdf develop-it">
           <h3>Develop it!</h3>
           <p class="left-align">Let's add some content to our site!</p>
           <ul>
@@ -561,7 +561,7 @@
 
         </section>
         <!-- Lets develop it-->
-        <section class="hide-pdf">
+        <section class="hide-pdf develop-it">
           <h3>Develop It!</h3>
           <p>Let's add links to our site</p>
           <ul>
@@ -622,11 +622,12 @@
         </section>
         
         <!-- Develop it! -->
-        <section>
+        <section class="hide-pdf develop-it">
           <h3>Develop It!</h3>
           <p>Let's add some images and line breaks to our page.</p>
           <p>We can even turn our images into links!</p>
         </section>
+
         <!-- Lists-->
         <section>
           <h3>Element: Lists</h3>
@@ -675,7 +676,7 @@
         </section>
         
         <!-- Develop it!-->
-        <section class="hide-pdf">
+        <section class="hide-pdf develop-it">
           <h3>Develop it!</h3>
           <p>Let's add one of each ordered and unordered lists to our page.</p>
           <p>We can make a list of links or even a list of images!</p>
@@ -796,7 +797,7 @@
         </section>       
 
         <!-- Develop it!-->
-        <section class="hide-pdf">
+        <section class="hide-pdf develop-it">
           <h3>Develop it!</h3>
           <p>Add a table of data to your page.</p>
           <p>Add a copyright statement at the bottom.</p>
@@ -824,7 +825,9 @@
       [].forEach.call(document.querySelectorAll('.splash'), function(el) {
         el.dataset.background = "#f05b62";
       });
-    </script>
+       [].forEach.call(document.querySelectorAll('.develop-it'), function(el) {
+        el.dataset.background = "#01a9b4";
+      });   </script>
 
     <script src="reveal/lib/js/head.min.js"></script>
     <script src="reveal/js/reveal.min.js"></script>
