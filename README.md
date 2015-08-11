@@ -1,5 +1,7 @@
 # CORE  HTML/CSS
 
+The slides for this class are available at [gdibtv.github.io/gdi-core-html-css/](http://gdibtv.github.io/gdi-core-html-css/)
+
 This is the official Girl Develop It Core HTML/CSS curriculum. It was developed through the contributions of Pamela Fox, Alexis Goldstein, Erin M. Kidwell, Izzy Johnston, and Jen Myers.
 
 The course is meant to be taught in 4 two-hour sections. Each of the slides and practice files are customizable according to the needs of a given class or audience.
