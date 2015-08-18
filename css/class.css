@@ -51,7 +51,10 @@
 
 .reveal dd { margin-bottom: .5em; }
 .reveal ul + p { margin-top: .5em; }
-.reveal strong { font-family: "Gotham-Bold", "Gotham-Book", "Helvetica", Arial, sans-serif; }
+.reveal strong, 
+.reveal .bold-override {  /* bold-override needed, because the fonts are set up without weights */
+	font-family: "Gotham-Bold", "Gotham-Book", "Helvetica", Arial, sans-serif; 
+}
 
 .reveal .slides section .fragment.visible.muted { opacity: .35;}
 
@@ -66,4 +69,14 @@
 .reveal .character-table th {
 	padding: 3px 10px;
 	text-align: center;
+}
+
+/*=== Class 3 */
+.reveal .class3-block-example {
+	height: 100px; 
+	width: 100px; 
+	background: #EDAB23; 
+	margin: 1em auto;
+	padding: 20px;
+	border: 5px solid #92BB44;
 }
