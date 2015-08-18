@@ -44,7 +44,7 @@
         </section>
         
         <!-- Welcome-->
-        <section>
+        <section class="hide-pdf">
           <h3>Welcome!</h3>
           <div class="left-align">
           <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
@@ -58,6 +58,11 @@
           </div>
         </section>
         
+        <!-- Recap -->
+        <section class="splash">
+          <h2>Recap</h2>
+        </section>
+
          <section>
           <h3>What we'll be making today</h3>
           <div class="left" style="width: 45%;">
@@ -67,7 +72,12 @@
             <img src="images/session2site.png">
           </div>
         </section>
-        
+
+        <!-- Layout Basics -->
+        <section class="splash">
+          <h2>Layout Basics</h2>
+        </section>
+
         <!-- Inline vs. block-->
         <section>
           <h3>Inline vs Block</h3>
@@ -155,8 +165,8 @@
 
 </div>
         </section> 
-        <section>
-          <h3>Let's Develop It</h3>
+        <section class="hide-pdf develop-it">
+          <h3>Develop It!</h3>
          <p class="left-align">Let's create a site using divs to separate content into different sections on our page.</p>
          <p class="left-align">Create a header, content area, sidebar, and a footer.</p>         
         </section> 
@@ -185,10 +195,16 @@
 <p>Paragraph with <span class="yellow">yellow</span> text.</p>
         </section>
         <!-- Exercise-->
-         <section>
-          <h3>Let's Develop It</h3>
+         <section class="hide-pdf develop-it">
+          <h3>Develop It!</h3>
          <p>Let's add some spans to our content to help highlight some text. </p>
         </section>      
+
+        <!-- Link Styles -->
+        <section class="splash">
+          <h2>Link Styles</h2>
+        </section>
+
         <!-- Pseudo class-->
         <section>
           <h3>Pseudo-classes, more CSS for links</h3>
@@ -227,14 +243,19 @@ a:link
         </section>
        
         <!-- Exercise-->
-        <section>
-          <h3>Let's Develop It</h3>
+        <section class="hide-pdf develop-it">
+          <h3>Develop It!</h3>
           <p>Add pseudo classes to your links</p>
         </section>
         
+        <!-- The Box Model -->
+        <section class="splash">
+          <h2>The Box Model</h2>
+        </section>
+
         <!-- Box model-->
         <section>
-          <h3>Box Model</h3>
+          <h3>The Box Model</h3>
           <img src="images/box-model.png"/>
         </section>
         
@@ -364,13 +385,19 @@ padding: 10px 5px 3px 5px;
 </code></pre>
         </section>
         
-        <!-- Exercise-->
+    
         <!-- Exercise -->
-    <section>
-      <h3>Let's Develop it!</h3>
+    <section class="hide-pdf develop-it">
+      <h3>Develop it!</h3>
       <p>Let's add some padding, borders, and margins to our divs.</p>
       <p>Let's center our entire document in the browser.</p>
     </section>
+ 
+        <!-- Controlling Size -->
+        <section class="splash">
+          <h2>Controlling Size</h2>
+        </section>
+
         <!-- Width-->
     <section>
       <h3>Property: Width</h3>
@@ -384,16 +411,18 @@ padding: 10px 5px 3px 5px;
       <p>Does not include padding or borders, remember these add to the width.</p>
     </section>
     <!-- Exercise -->
-    <section>
-      <h3>Let's develop it!</h3>
+    <section class="hide-pdf develop-it">
+      <h3>Develop it!</h3>
       <div class="left-align">
         <p>Add a width &amp; height to our divs.</p>
         <p>Use IDs to target each div with CSS</p>
       </div>
     </section>
-        <section>
+
+        <!-- The End -->
+        <section class="splash">
           <h2>Questions?</h2>
-          <div class="question-mark blue">?</div>
+          <p class="question-mark">?</p>
         </section>
       
       </div>
@@ -406,6 +435,17 @@ padding: 10px 5px 3px 5px;
       </footer>
     </div>
 
+    <script>
+      //Hack in background color for all .splash slides
+      //Must come prior to Reveal init
+      //but doing it manually is too much work
+      [].forEach.call(document.querySelectorAll('.splash'), function(el) {
+        el.dataset.background = "#f05b62";
+      });
+       [].forEach.call(document.querySelectorAll('.develop-it'), function(el) {
+        el.dataset.background = "#01a9b4";
+      });
+    </script>
 
     <script src="reveal/lib/js/head.min.js"></script>
     <script src="reveal/js/reveal.min.js"></script>
