@@ -44,7 +44,7 @@
         </section>
         
         <!-- Welcome-->
-        <section>
+        <section class="hide-pdf">
           <h3>Welcome!</h3>
           <div class="left-align">
           <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
@@ -55,6 +55,16 @@
             <li>Help each other</li>
             <li>Have fun</li>
           </ul>
+          </div>
+        </section>
+
+         <section>
+          <h3>What we'll be making today</h3>
+          <div class="left" style="width: 45%;">
+            <p>Today we will learn how to position our divs to create a page that has a 2-column layout.</p>
+          </div>
+          <div class="right" style="width: 45%;">
+            <img src="images/session2site.png">
           </div>
         </section>
         
@@ -219,8 +229,9 @@
         <div style="position: absolute; bottom: -15px; left:60px; 
           background-color: green; z-index: 2; "> Top </div>
        </section>
-       <section>
-        <h3>Let's Develop it!</h3>
+
+       <section class="hide-pdf develop-it">
+        <h3>Develop It!</h3>
         <p>Let's add some positioning.</p>
         <p>Let's create a div that contains an image and a caption, and position the caption absolutely overtop the image.</p>
         
@@ -304,13 +315,15 @@
         </section>
         
         <!-- Exercise-->
-       <section>
-         <h3>Let's Develop It</h3>
+       <section class="hide-pdf develop-it">
+         <h3>Develop It!</h3>
          <p>Let's float our side bar and content areas.</p>
-       </section>       <!-- Question-->
-        <section>
+       </section>
+
+        <!-- The End -->
+        <section class="splash">
           <h2>Questions?</h2>
-          <div class="question-mark blue">?</div>
+          <p class="question-mark">?</p>
         </section>
       
       </div>
@@ -323,6 +336,17 @@
       </footer>
     </div>
 
+    <script>
+      //Hack in background color for all .splash slides
+      //Must come prior to Reveal init
+      //but doing it manually is too much work
+      [].forEach.call(document.querySelectorAll('.splash'), function(el) {
+        el.dataset.background = "#f05b62";
+      });
+       [].forEach.call(document.querySelectorAll('.develop-it'), function(el) {
+        el.dataset.background = "#01a9b4";
+      });
+    </script>
 
     <script src="reveal/lib/js/head.min.js"></script>
     <script src="reveal/js/reveal.min.js"></script>
