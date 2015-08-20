@@ -58,6 +58,8 @@
 
 .reveal .slides section .fragment.visible.muted { opacity: .35;}
 
+.reveal .show-outline { outline: 1px solid #000; }
+
 /*=== Class 1 */
 
 .reveal .character-table {
