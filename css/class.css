@@ -47,6 +47,13 @@
 	.reveal .develop-it > * {
 		color: #000;
 	}
+	.reveal .slides section.hide-pdf {
+		display: none !important;
+	}
+	.reveal footer {
+		position: absolute;
+		background-color: white;
+	}
 }
 
 .reveal dd { margin-bottom: .5em; }
